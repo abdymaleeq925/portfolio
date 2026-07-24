@@ -30,9 +30,9 @@ src/
 ├── assets/              # Images and CV-file
 ├── components/
 │   ├── sections/        # Header, Hero, About, Projects, Experience, Contact
-│   └── ui/               # Reusable UI primitives (Button, etc.)
-├── data/                 # Static content — cv data
-├── hooks/                 # Custom hooks (useScrollTo, etc.)
+│   └── ui/              # Reusable UI primitives (Button, etc.)
+├── data/                # Static content — cv data
+├── hooks/               # Custom hooks (useScrollTo, etc.)
 ├── App.tsx
 └── main.tsx
 ```
@@ -47,8 +47,8 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/abdymaleeq925/portfolio.git
+cd portfolio
 npm install
 ```
 
