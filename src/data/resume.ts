@@ -1,8 +1,21 @@
+import movease from "../assets/movease_layout.png"
+import drive from "../assets/drive_layout.png"
+import fortouristic from "../assets/fortouristic_layout.png"
+import blog from "../assets/blog_layout.png"
+
 interface TechStackProps {
-    name: string,
-    slug: string,
-    source: "devicon" | "simple-icons"
-  }
+  name: string,
+  slug: string,
+  source: "devicon" | "simple-icons"
+}
+
+export interface petProjectsProps {
+  title: string,
+  description: string,
+  tags: string[],
+  img: string,
+  href: string
+}
 
 export const techStack: TechStackProps[] = [
     // devicon
@@ -50,4 +63,35 @@ const SIMPLE_ICONS_BASE = "https://cdn.simpleicons.org"
 export const getIconUrl = ({ slug, source }: TechStackProps): string =>
   source === "devicon"
     ? `${DEVICON_BASE}/${slug}.svg`
-    : `${SIMPLE_ICONS_BASE}/${slug}`
+    : `${SIMPLE_ICONS_BASE}/${slug}`;
+
+export const petprojects: petProjectsProps[] = [
+  {
+    title: "Movease",
+    description: "This Movie App lets users browse trending movies, search titles, and explore content using the TMDB API. It features a responsive layout and a sleek, modern design via TailwindCSS.",
+    tags: ["React + Vite", "Appwrite", "TailwindCSS"],
+    img: movease,
+    href: "https://movease-eight.vercel.app"
+  },
+  {
+    title: "Dr.Ive",
+    description: "A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.",
+    tags: ["Next.js 15", "Appwrite", "TailwindCSS", "ShadCN", "TypeScript"],
+    img: drive,
+    href: "https://drive-wheat.vercel.app"
+  },
+  {
+    title: "Fortouristic",
+    description: "A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips with ease.",
+    tags: ["React 19 + Vite", "Tailwind CSS", "React Router v7", "Syncfusion"],
+    img: fortouristic,
+    href: "https://fortouristic.vercel.app/"
+  },
+  {
+    title: "FutureTech Blog",
+    description: "A full-stack blogging platform dedicated to Artificial Intelligence and Technologies with JWT auth, nested comments, and real-time interactions",
+    tags: ["React + Vite", "RTK Query", "MongoDB", "Node.js"],
+    img: blog,
+    href: "https://blog-4wsh.onrender.com/"
+  }
+];
