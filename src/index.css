@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Базовые настройки для корректной работы Lenis Smooth Scroll */
+
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -19,6 +19,10 @@ html.lenis, html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
 }
 
 html {

@@ -1,0 +1,110 @@
+{
+    "initials": "AB",
+    "menu": {
+        "open": "Open Menu",
+        "close": "Close Menu"
+    },
+    "languageSwitcher": {
+        "label": "Switch language"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "experience": "Experience",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "work": "View My Work",
+      "contact": "Get In Touch"
+    },
+    "hero": {
+      "greeting": "Hello I'm",
+      "name": "Abdymalik Batyrkulov",
+      "role": "Frontend Developer with 2+ years experience",
+      "description": "Building high-performance, responsive web applications with a focus on polished UI/UX and clean architecture. Passionate about turning complex ideas into seamless digital experiences through modern React and Next.js ecosystem."
+    },
+    "about": {
+      "title": "About Me",
+      "description": "Frontend Developer with 2+ years of commercial experience in architecting scalable web applications and micro-frontend ecosystems using React, Next.js, and TypeScript. Proven track record of boosting UI performance by 15% and streamlining cross-platform authorization. Expert in global state management (Zustand, Redux) and building accessible, secure, user-centric interfaces. Fluent in English (C1) and Russian, driving results in fast-paced cross-functional Agile teams.",
+      "techStack": "Tech Stack"
+    },
+    "projects": {
+      "title": "Pet Projects",
+      "description": "A selection of projects that showcase my approach to solving complex coding challenges",
+      "items": [
+        {
+          "title": "Movease",
+          "description": "This Movie App lets users browse trending movies, search titles, and explore content using the TMDB API. It features a responsive layout and a sleek, modern design via TailwindCSS."
+        },
+        {
+          "title": "Dr.Ive",
+          "description": "A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management."
+        },
+        {
+          "title": "Fortouristic",
+          "description": "A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips with ease."
+        },
+        {
+          "title": "FutureTech Blog",
+          "description": "A full-stack blogging platform dedicated to artificial intelligence and modern technologies with JWT auth, nested comments, videos, books and real-time interactions"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "My professional journey",
+      "items": [
+        {
+          "period": "November 2025 - May 2026",
+          "position": "Frontend Developer",
+          "companyName": "Akatosphere",
+          "achievements": [
+            "Optimized platform-wide user authorization by reducing validation time to sub-2s, engineering a Unified Auth & SSO System for 6 core services using TypeScript and shared cookies.",
+            "Automated complex bonus distributions across the entire user base by developing a scalable Referral & Reward Module integrated with React deep-link tracking.",
+            "Streamlined client data workflows by building an interactive Customer Dashboard in React for real-time management of bonus balances and dynamic coupon generation.",
+            "Maintained a 1.5s UI response time under peak loads of 10k concurrent requests by implementing frontend optimization, brute-force security, and GDPR compliance standards."
+          ]
+        },
+        {
+          "period": "September 2025 - November 2025",
+          "position": "Frontend Developer",
+          "companyName": "Tivali Club",
+          "achievements": [
+            "Boosted application loading speed by 15% by engineering high-performance custom UI solutions to replace 30% of bloated third-party libraries in a Next.js environment.",
+            "Accelerated feature delivery time by 25% by modernizing application architecture with Zustand global state management and strict data validation via Zod.",
+            "Expanded international market reach by 40% and raised user engagement by 20% through localized interaction modules powered by React and multi-language support."
+          ]
+        },
+        {
+          "period": "January 2025 - May 2025",
+          "position": "Frontend Developer",
+          "companyName": "Vision Core",
+          "achievements": [
+            "Enhanced codebase maintainability and page rendering speed by 40% through a comprehensive core architecture refactoring using React best practices and TypeScript.",
+            "Reduced UI code duplication by 40% by creating a reusable, ARIA-compliant component library driven by a custom useModal hook in React.",
+            "Accelerated global accessibility and site load speed across mobile devices by developing responsive mobile-first layouts integrated with instant i18next localization rendering."
+          ]
+        },
+        {
+          "period": "July 2024 - November 2024",
+          "position": "Frontend Developer",
+          "companyName": "Dara Solutions",
+          "achievements": [
+            "Improved internal platform efficiency and operational speed by designing 5+ educational modules integrated with structured data flows via RESTful APIs and React.",
+            "Boosted frontend application stability and reduced production downtime by identifying and resolving 30+ critical bugs within the core React and Redux codebase."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Work Together",
+      "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
+      "getInTouch": "Get In Touch",
+      "sendEmail": "Send me an email"
+    },
+    "footer": {
+      "rights": "Abdymalik Batyrkulov. All rights reserved.",
+      "description": "Designed & Built with passion and lots of coffee ☕"
+    }
+  }

@@ -1,13 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 import { Reveal } from "../ui/Reveal";
 import { getIconUrl, techStack } from "../../data/resume";
 import aboutMeImage from "../../assets/about-me.png";
 
 export const About = () => {
+  const { t } = useTranslation();
   return (
     <section id="about" className="min-h-screen bg-black py-20 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <Reveal as="h2" className="text-5xl md:text-6xl font-bold mb-16 text-center bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-          About Me
+          {t("about.title")}
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -24,12 +27,12 @@ export const About = () => {
 
           <div className="space-y-6">
             <Reveal as="p" x={60} y={0} duration={0.7} delay={0.15} className="text-gray-300 text-xl">
-              Frontend Developer with 2+ years of commercial experience in architecting scalable web applications and micro-frontend ecosystems using React, Next.js, and TypeScript. Proven track record of boosting UI performance by 15% and streamlining cross-platform authorization. Expert in global state management (Zustand, Redux) and building accessible, secure, user-centric interfaces. Fluent in English (C1) and Russian, driving results in fast-paced cross-functional Agile teams.
+              {t("about.description")}
             </Reveal>
 
             <div className="space-y-4">
               <Reveal as="h3" x={60} y={0} delay={0.2} className="text-2xl font-bold text-white mb-4">
-                Tech Stack
+                {t("about.techStack")}
               </Reveal>
 
               <ul className="flex flex-wrap gap-2">

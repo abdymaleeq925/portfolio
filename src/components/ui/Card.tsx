@@ -8,7 +8,7 @@ type CardProps =
 
 export const Card = (props: CardProps) => {
   if (props.isProject) {
-    const { cardData } = props
+    const { cardData } = props;
     return (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -75,7 +75,7 @@ export const Card = (props: CardProps) => {
           <h3 className="text-xl font-bold text-white mb-1">{cardData.position}</h3>
           <p className="text-purple-400 mb-4">{cardData.companyName}</p>
           <ul className="space-y-2">
-            {cardData.achievements.map((achievement, i) => (
+            {(cardData.achievements ?? []).map((achievement, i) => (
               <li key={i} className="flex gap-2 text-gray-400 text-sm">
                 <span className="text-purple-400 shrink-0">—</span>
                 <span>{achievement}</span>
