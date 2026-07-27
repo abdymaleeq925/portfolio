@@ -1,29 +1,48 @@
-import aboutMeImage from "../../assets/about-me.png"
-import { getIconUrl, techStack } from "../../data/resume"
+import { Reveal } from "../ui/Reveal";
+import { getIconUrl, techStack } from "../../data/resume";
+import aboutMeImage from "../../assets/about-me.png";
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen bg-black py-20 px-6">
+    <section id="about" className="min-h-screen bg-black py-20 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-16 text-center bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+        <Reveal as="h2" className="text-5xl md:text-6xl font-bold mb-16 text-center bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
           About Me
-        </h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <img
-            className="rounded-2xl shadow-[0_0_50px_rgba(168,85,247,0.5)] w-full h-125 object-cover"
-            alt="about-me"
+        </Reveal>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <Reveal
+            as="img"
+            x={-60}
+            y={0}
+            duration={0.7}
             src={aboutMeImage}
+            alt="about-me"
             loading="lazy"
+            className="rounded-2xl shadow-[0_0_50px_rgba(168,85,247,0.5)] w-full h-125 object-cover"
           />
+
           <div className="space-y-6">
-            <article className="text-gray-300 text-xl">
+            <Reveal as="p" x={60} y={0} duration={0.7} delay={0.15} className="text-gray-300 text-xl">
               Frontend Developer with 2+ years of commercial experience in architecting scalable web applications and micro-frontend ecosystems using React, Next.js, and TypeScript. Proven track record of boosting UI performance by 15% and streamlining cross-platform authorization. Expert in global state management (Zustand, Redux) and building accessible, secure, user-centric interfaces. Fluent in English (C1) and Russian, driving results in fast-paced cross-functional Agile teams.
-            </article>
+            </Reveal>
+
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-white mb-4">Tech Stack</h3>
-              <div className="flex flex-wrap gap-2">
-                {techStack.map((icon) => (
-                  <div key={icon.slug} className="group relative">
+              <Reveal as="h3" x={60} y={0} delay={0.2} className="text-2xl font-bold text-white mb-4">
+                Tech Stack
+              </Reveal>
+
+              <ul className="flex flex-wrap gap-2">
+                {techStack.map((icon, index) => (
+                  <Reveal
+                    as="li"
+                    key={icon.slug}
+                    y={0}
+                    scale={0.6}
+                    duration={0.35}
+                    delay={index * 0.05}
+                    className="group relative"
+                  >
                     <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-white/25 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-110 hover:shadow-purple-500/50">
                       <img
                         src={getIconUrl(icon)}
@@ -34,14 +53,12 @@ export const About = () => {
                         className="object-contain"
                       />
                     </div>
-
-                    {/* Tooltip */}
                     <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-gray-900 px-2 py-1 text-xs text-white opacity-0 shadow-lg transition-opacity duration-200 group-hover:opacity-100">
                       {icon.name}
                     </span>
-                  </div>
+                  </Reveal>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         </div>
