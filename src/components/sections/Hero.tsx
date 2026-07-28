@@ -8,12 +8,15 @@ import { useScrollTo } from "../../hooks/useScrollTo";
 
 
 export const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const scrollTo = useScrollTo()
   const handleClick = (id: string) => (e: MouseEvent) => {
     e.preventDefault()
     scrollTo(id)
   }
+  const currentLang = i18n.language || "en";
+  const resumePath = `/Abdymalik_Batyrkulov_CV_${currentLang}.pdf`;
+  const downloadFileName = `Abdymalik_Batyrkulov_CV_${currentLang}.pdf`;
 
   return (
     <section id="home" className="min-h-screen py-0 md:py-13 lg:py-0 flex items-center justify-center relative overflow-hidden bg-linear-to-br from-black via-gray-900 to-black">
@@ -37,6 +40,7 @@ export const Hero = () => {
         <Reveal as="div" viewport={false} y={24} delay={0.58} className="flex gap-4 justify-center flex-wrap">
           <Button href="#projects" onClick={handleClick("projects")}>{t("buttons.work")}</Button>
           <Button href="#contact" onClick={handleClick("contact")}>{t("buttons.contact")}</Button>
+          <Button href={resumePath} download={downloadFileName}>{t("buttons.download")}</Button>
         </Reveal>
       </div>
       <Reveal

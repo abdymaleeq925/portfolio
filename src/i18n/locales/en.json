@@ -16,7 +16,8 @@
     },
     "buttons": {
       "work": "View My Work",
-      "contact": "Get In Touch"
+      "contact": "Get In Touch",
+      "download": "Download CV"
     },
     "hero": {
       "greeting": "Hello I'm",
